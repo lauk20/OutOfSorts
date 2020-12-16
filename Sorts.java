@@ -1,4 +1,4 @@
-import java.util.*;
+//import java.util.*;
 
 public class Sorts{
   /**Bubble sort of an int array.
@@ -10,7 +10,7 @@ public class Sorts{
     for (int i = 0; i < data.length - 1 && swapped; i++){
       swapped = false;
       for (int v = 0; v < data.length - (i + 1); v++){
-        System.out.println(Arrays.toString(data)); //REMOVE WHEN DONE
+        //System.out.println(Arrays.toString(data)); //REMOVE WHEN DONE
         if (data[v] > data[v + 1]){
           int holder = data[v + 1];
           data[v + 1] = data[v];
@@ -19,7 +19,7 @@ public class Sorts{
           swapped = true;
         }
       }
-      System.out.println(); //REMOVE WHEN DONE
+      //System.out.println(); //REMOVE WHEN DONE
     }
   }
 }
