@@ -4,12 +4,27 @@ public class Tester{
   public static void main(String[] args){
     int[] bubbleSort1 = new int[]{5,1,12,-5,16};
     Sorts.bubbleSort(bubbleSort1);
+    System.out.println(Arrays.toString(bubbleSort1));
 
     bubbleSort1 = new int[]{2,3,4,5,1};
     Sorts.bubbleSort(bubbleSort1);
+    System.out.println(Arrays.toString(bubbleSort1));
 
     bubbleSort1 = new int[]{6,1,2,3,4,5};
     Sorts.bubbleSort(bubbleSort1);
+    System.out.println(Arrays.toString(bubbleSort1));
+
+    bubbleSort1 = new int[]{1,1,1,1,5,1,1,1};
+    Sorts.bubbleSort(bubbleSort1);
+    System.out.println(Arrays.toString(bubbleSort1));
+
+    bubbleSort1 = new int[]{1,2,3,4,5};
+    Sorts.bubbleSort(bubbleSort1);
+    System.out.println(Arrays.toString(bubbleSort1));
+
+    bubbleSort1 = new int[]{};
+    Sorts.bubbleSort(bubbleSort1);
+    System.out.println(Arrays.toString(bubbleSort1));
 
     for (int i = 0; i < 1001; i++){
       int limit = 5;//(int)(Math.random() * 50);
@@ -24,7 +39,7 @@ public class Tester{
       Arrays.sort(correct);
       Sorts.bubbleSort(numbers);
       if (Arrays.equals(numbers,correct)){
-        System.out.println(i + " PASSED");
+        //System.out.println(i + " PASSED");
         //System.out.println(Arrays.toString(numbers));
       }
       else{
