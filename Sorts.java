@@ -36,4 +36,23 @@ public class Sorts{
       data[min] = holder;
     }
   }
+
+  public static void insertionSort(int[] data){
+    for (int i = 1; i < data.length; i++){
+      int item = data[i];
+      boolean go = true;
+      for (int v = i - 1; v >= 0 && go; v--){
+        if (data[v] > item){
+          data[v + 1] = data[v];
+          if (v == 0){
+            data[0] = item;
+          }
+        }
+        else{
+          data[v + 1] = item;
+          go = false;
+        }
+      }
+    }
+  }
 }
