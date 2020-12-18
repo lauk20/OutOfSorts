@@ -1,4 +1,4 @@
-//import java.util.*;
+import java.util.*;
 
 public class Sorts{
   /**Bubble sort of an int array.
@@ -20,6 +20,20 @@ public class Sorts{
         }
       }
       //System.out.println(); //REMOVE WHEN DONE
+    }
+  }
+
+  public static void selectionSort(int[] data){
+    for (int i = 0; i < data.length; i++){
+      int min = i;
+      for (int v = i; v < data.length; v++){
+        if (data[v] < data[min]){
+          min = v;
+        }
+      }
+      int holder = data[i];
+      data[i] = data[min];
+      data[min] = holder;
     }
   }
 }
