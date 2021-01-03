@@ -24,9 +24,9 @@ public class Sorts{
   }
 
   public static void selectionSort(int[] data){
-    for (int i = 0; i < data.length; i++){
+    for (int i = 0; i < data.length - 1; i++){
       int min = i;
-      for (int v = i; v < data.length; v++){
+      for (int v = i + 1; v < data.length; v++){
         if (data[v] < data[min]){
           min = v;
         }
